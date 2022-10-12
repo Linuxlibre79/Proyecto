@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:text="0"
+        android:textColor="#0E0E0E"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText_n1"
+                android:layout_width="199dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="N1"
+                android:inputType="number"
+                android:text="N1"
+                android:textColor="#151515"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editText_n1_"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="N1 %"
+                android:inputType="number"
+                android:text="N1 %"
+                android:textColor="#0B0A0A"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText_n2"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="N2"
+                android:inputType="number"
+                android:text="N2"
+                android:textColor="#100F0F"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X %"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:textStyle="bold"
+                app:iconTint="#131313" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
